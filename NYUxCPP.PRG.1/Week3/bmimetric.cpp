@@ -18,7 +18,7 @@ int main(void)
     // outputs BMI
     std::cout << std::fixed;
     std::cout << std::setprecision(2);
-    std::cout << "BMI is" << ": " << dBMI << std::endl;
+    std::cout << "BMI is: " << dBMI << std::endl;
 
     return 0;
 } // closes main(void)
