@@ -130,7 +130,7 @@ def accuracy_score(y_true, y_pred):
     row_ind, col_ind = linear_sum_assignment(w.max() - w)
     return sum([w[row_ind[i], col_ind[i]] for i in range(len(row_ind))]) * 1.0 / y_pred.size
   
- def kmeans2(X,  Initial, k, max_iter = 500):
+def kmeans2(X,  Initial, k, max_iter = 500):
     
     assert len(X) > k, 'illegal inputs'
 
@@ -156,7 +156,7 @@ def accuracy_score(y_true, y_pred):
     return labels
   
   
-  import pandas as pd
+import pandas as pd
 tmp = ["random.seed","Accuracy"]
 n = 11
 k = 4
