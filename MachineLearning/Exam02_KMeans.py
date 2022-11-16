@@ -1,4 +1,9 @@
-c = ['x1', 'x2']
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+
+c = ["x1", "x2"]
 X = np.array([
     [1, 1],
     [2, 1],
