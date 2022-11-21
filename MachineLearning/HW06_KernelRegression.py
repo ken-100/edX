@@ -96,8 +96,7 @@ def kernel_regression_fitting(xTrain, yTrain, h, beta=1):
     
     # TODO: calculate W below (it is a n*1 matrix)
     
-#     K = rbf_kernel(xTrain, yTrain, beta)
-    K = rbf_kernel(xTrain, xTrain, beta)
+    K = rbf_kernel(xTrain, xTrain, h)
     n = len(xTrain)
     W = np.linalg.inv(K + beta * np.eye(n)).dot(yTrain)
     
